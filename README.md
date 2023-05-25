@@ -33,7 +33,7 @@
 <div>
 <h1>Screenshot</h1>
 
-![Settings Window](https://raw.github.com/voLter-2109/projects/main/login.bmp)
+![Settings Window](https://raw.github.com/voLter-2109/Green-test/main/login.bmp)
 
-![Settings Window](https://raw.github.com/voLter-2109/projects/main/magazin.png)
+![Settings Window](https://raw.github.com/voLter-2109/Green-test/main/main.bmp)
 </div>

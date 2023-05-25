@@ -21,12 +21,12 @@
 <div align="start" >
 <span>Start</span>
     <ul>
-        <li>
-            npm i
-        </li>
-        <li>
-        npm start
-        </li>
+      <li>npm i</li>
+      <li>npm start</li>
+      <li>or</li>
+      <li>npm i</li>
+      <li>npm run build</li>
+      <li>serve -s build</li>
     </ul>
 </div>
 

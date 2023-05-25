@@ -1,0 +1,128 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, rgb(0, 168, 132) 0% 30%, rgb(17, 27, 33) 30% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .icon {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+
+    & .img {
+      height: 39px;
+    }
+    & span {
+      margin-left: 14px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      color: #fff;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+  }
+
+  & .container {
+    margin-top: 40px;
+    width: 1000px;
+    height: 717px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 17px 50px 0 rgb(11 20 26 / 19%), 0 12px 15px 0 rgb(11 20 26 / 24%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    & .left {
+      ol {
+        margin-top: 20px;
+        li {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+    & input[type="text"],
+    input[type="tel"] {
+      padding: 5px 10px;
+      border: none;
+      border-bottom: 1px solid black;
+      position: absolute;
+      width: 100%;
+
+      &:hover {
+        border-bottom: 1px solid rgb(233, 4, 4);
+      }
+    }
+
+    & input[type="submit"] {
+      width: 250px;
+      padding: 5px;
+      border-radius: 3px;
+      background: none;
+      border: 1px solid rgb(0, 168, 132);
+      cursor: pointer;
+      margin: 0 auto;
+      transition: all 0.3s ease;
+
+      &:hover {
+        box-shadow: 5px 5px 10px 1px rgb(0, 168, 132);
+      }
+    }
+
+    & input[type="text"]:focus,
+    & input[type="tel"]:focus,
+    & input[type="text"]:not(:focus):valid,
+    & input[type="tel"]:not(:focus):valid {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid rgb(195, 72, 72);
+    }
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      height: 70px;
+      position: relative;
+
+      & label {
+        position: absolute;
+        z-index: 10;
+        pointer-events: none;
+        top: 0px;
+        transition: all 0.3s ease-in-out;
+        left: 10px;
+      }
+
+      & input[type="text"]:focus ~ label,
+      & input[type="tel"]:focus ~ label,
+      & input[type="text"]:not(:focus):valid ~ label,
+      & input[type="tel"]:not(:focus):valid ~ label {
+        color: gray;
+        transform: translateY(-15px) translateX(-15px) scale(0.75);
+      }
+    }
+  }
+
+  .errorMessage {
+    text-align: center;
+    padding: 5px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid red;
+    box-shadow: 5px 5px 10px 0 rgba(255, 0, 0, 0.619);
+  }
+}
